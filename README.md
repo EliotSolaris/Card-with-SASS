@@ -1,2 +1,4 @@
-# Card-with-SASS
-Making a card element with SASS
+# SASS / SCSS
+
+npm init --yes
+npm i --D sass
