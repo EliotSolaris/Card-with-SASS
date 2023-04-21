@@ -1,0 +1,51 @@
+// @import './variables';
+// @use './variables' as var;  here u need to use var before every $somethingsomething example: var$background-color
+@use './variables' as *;
+@use './buttons' as *;
+@use './cards' as *;
+@use './mixins' as *;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: $background-color;
+}
+
+footer {
+    @include setFlex(column);
+    margin-bottom: 20px;
+    gap: 10px;
+    background-color: $background-color;
+    color: $off-white;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: $secondary-color;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    color: $secondary-color;
+}
+.header{
+    margin: 10px;
+    @include setFlex(column);  
+}
+.signature{
+    margin: 5px auto;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: $primary-color;
+}
+
+.social-links{
+    @include setFlex(row);
+    @extend %btn-text;
+
+}
+

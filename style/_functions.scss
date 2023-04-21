@@ -1,0 +1,4 @@
+// for 1rem = 16px
+@function convertPxToRem($pxValue) {
+@return #{$pxValue / 16}rem;
+}
