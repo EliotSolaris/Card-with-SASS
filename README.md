@@ -12,10 +12,19 @@
 ####    parcel: "^2.8.3",
 ####    sass: "^1.62.0"
 
-### Terminal install: 
-
 ## Setup
-#### npm init --yes 
-#### parcel npm install --save-dev parcel
+To run this project, install it locally using npm:
+
+```
+$  npm init --yes 
+$ npm install
+parcel npm install --save-dev parcel
+$ SASS npm i --D sass
+$ npm start
+```
+
+
+
+
 #### In package.json s#add > "scripts"{"start": "parcel ./src/index.html",}
-#### SASS npm i --D sass
+
