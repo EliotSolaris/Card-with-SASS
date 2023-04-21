@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+
+%btn{
+    border: 0;
+    border-radius: 5px;
+    margin: auto 5px ;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+%btn-text{
+    font-family: 'Montserrat', sans-serif;
+    color: $off-white;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+.primary-btn {
+    background-color: $primary-color;
+@extend %btn;
+
+    &-text {
+        @extend %btn-text;
+    }
+
+}
+
+.secondary-btn {
+    background-color: $background-color;
+  
+    @extend %btn;
+
+    &-text {
+        @extend %btn-text;
+    }
+
+}
