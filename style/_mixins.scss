@@ -5,9 +5,10 @@
 overflow: hidden;
 }
 
-@mixin setFlex($flex-direction, $justify-content: center, $align-items:center) {
+@mixin setFlex($flex-direction, $justify-content: center, $align-items: center) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $align-items;
+   
 }

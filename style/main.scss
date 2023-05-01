@@ -1,21 +1,20 @@
-// @import './variables';
-// @use './variables' as var;  here u need to use var before every $somethingsomething example: var$background-color
+
 @use './variables' as *;
 @use './buttons' as *;
 @use './cards' as *;
 @use './mixins' as *;
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include setFlex(column); 
     margin: 0;
     background-color: $background-color;
 }
-
+main {
+    @include setFlex(column);
+}
 footer {
     @include setFlex(column);
-    margin-bottom: 20px;
+    margin:  20px auto;
     gap: 10px;
     background-color: $background-color;
     color: $off-white;
